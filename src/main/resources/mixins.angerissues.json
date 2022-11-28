@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "trollogyadherent.angerissue.mixin.mixins",
+  "plugin": "trollogyadherent.angerissue.mixin.plugin.MixinPlugin",
+  "refmap": "mixins.angerissues.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "EntityLivingBaseMixin"
+  ]
+}
+
