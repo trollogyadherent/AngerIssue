@@ -13,3 +13,7 @@ where arbitrary values can be grouped together (in this case `string` and `float
 
 This mod requires the [FalsePatternLib](https://www.curseforge.com/minecraft/mc-mods/fplib).
 This mod requires a mixin lib provider, like [GasStation](https://www.curseforge.com/minecraft/mc-mods/gasstation).
+
+<br>
+
+![license](lgplsneed_small.png)
