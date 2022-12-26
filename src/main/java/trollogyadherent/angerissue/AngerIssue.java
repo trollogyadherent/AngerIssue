@@ -5,9 +5,16 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import trollogyadherent.angerissue.varinstances.VarInstanceClient;
+import trollogyadherent.angerissue.varinstances.VarInstanceCommon;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]")
+import java.io.File;
+
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.7.10]", guiFactory = "trollogyadherent."+ Tags.MODID +".gui.GuiFactory")
 public class AngerIssue {
+    public static VarInstanceClient varInstanceClient = new VarInstanceClient();
+    public static VarInstanceCommon varInstanceCommon = new VarInstanceCommon();
+    public static File confFile;
 
     private static Logger LOG = LogManager.getLogger(Tags.MODID);
 

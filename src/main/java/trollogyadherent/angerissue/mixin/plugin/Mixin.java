@@ -23,6 +23,7 @@ public enum Mixin implements IMixin {
 
     //Vanilla minecraft is implicitly defined as a dependency, no need to explicitly declare it
     EntityLivingBaseMixin(Side.COMMON, always(), "EntityLivingBaseMixin"),
+    EntityMobMixin(Side.COMMON, always(), "EntityMobMixin"),
     // You may also require multiple mods to be loaded if your mixin requires both
 
     // The modFilter argument is a predicate, so you can also use the .and(), .or(), and .negate() methods to mix and match multiple predicates.

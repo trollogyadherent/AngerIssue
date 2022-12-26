@@ -2,14 +2,14 @@
     {
       "modid": "${modId}",
       "name": "${modName}",
-      "description": "An example mod for Minecraft 1.7.10 with Forge focussed on a stable setup.",
+      "description": "Library mod allowing for passive mobs to deal damage.",
       "version": "${modVersion}",
       "mcversion": "${minecraftVersion}",
-      "url": "https://github.com/SinTh0r4s/MyMod",
+      "url": "https://github.com/trollogyadherent/AngerIssue",
       "updateUrl": "",
-      "authorList": ["SinTho0r4s"],
-      "credits": "",
-      "logoFile": "",
+      "authorList": ["trollogyadherent"],
+      "credits": "Falsepattern",
+      "logoFile": "assets/${modId}/logo.png",
       "screenshots": [],
       "dependencies": []
     }

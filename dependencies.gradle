@@ -11,4 +11,5 @@ dependencies {
     }*/
 
     compile("com.falsepattern:falsepatternlib-mc1.7.10:0.10.10:dev")
+    compile fileTree(dir: 'libs', include: '*.jar')
 }

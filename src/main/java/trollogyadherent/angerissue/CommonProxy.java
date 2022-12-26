@@ -1,16 +1,19 @@
 package trollogyadherent.angerissue;
 
 import cpw.mods.fml.common.event.*;
+import trollogyadherent.angerissue.config.Config;
 
 public class CommonProxy {
 
     // preInit "Run before anything else. Read your config, create blocks, items,
     // etc, and register them with the GameRegistry."
     public void preInit(FMLPreInitializationEvent event) 	{
-        Config.syncronizeConfiguration(event.getSuggestedConfigurationFile());
-
-        AngerIssue.info(Config.greeting);
-        AngerIssue.info("I am " + Tags.MODNAME + " at version " + Tags.VERSION + " and group name " + Tags.GROUPNAME);
+        AngerIssue.confFile = event.getSuggestedConfigurationFile();
+        if (Util.isServer()) {
+            Config.synchronizeConfigurationServer(event.getSuggestedConfigurationFile(), false);
+        } else {
+            Config.synchronizeConfigurationClient(event.getSuggestedConfigurationFile(), false, true);
+        }
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."
